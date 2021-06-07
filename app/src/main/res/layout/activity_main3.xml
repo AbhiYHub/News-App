@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="Enter User Name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/bg0"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="Enter Email Id"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edt_number"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/email"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:hint="Enter Number"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/user_name"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

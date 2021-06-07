@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/no_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_phone_number"
+        android:textSize="29sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"/>
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/no_text"
+        app:ccp_defaultNameCode="IN"></com.hbb20.CountryCodePicker>
+
+    <EditText
+        android:id="@+id/mob_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_action_name"
+        android:layout_below="@id/ccp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:hint="Enter phone number"
+        android:gravity="center"
+        android:maxLength="13"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_below="@+id/mob_no"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/all"
+        android:text="Sign In"
+        android:textSize="17sp"
+        android:layout_marginStart="7dp"
+        android:textColor="@color/colorPrimary"
+        android:clickable="true"
+        android:id="@+id/signIn"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
